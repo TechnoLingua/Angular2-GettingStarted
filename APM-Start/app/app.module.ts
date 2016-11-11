@@ -13,7 +13,8 @@ import { StarComponent } from './shared/star.component';
     AppComponent,
     ProductListComponent,
     ProductFilterPipe,
-    StarComponent],
+    StarComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

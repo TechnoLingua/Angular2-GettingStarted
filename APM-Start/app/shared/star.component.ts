@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -8,7 +8,7 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 })
 export class StarComponent implements OnInit, OnChanges {
     constructor() { }
-    rating: number = 4;
+    @Input() rating: number;
     starWidth: number;
     ngOnInit() { }
     ngOnChanges(): void {
